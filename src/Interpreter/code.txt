@@ -1,0 +1,251 @@
+var x : int;
+for x in 0..-4 do
+  print x;
+end for;
+
+/*var y : bool;
+var x : int := 2;
+y := !((-x = -2) & !(1 = 2));
+print y;*/
+
+/*var x : int := -2;
+x := x * 1;
+x := x * 1;
+print x; // -2
+x := -x * 1;
+print x; // 2
+print -(x / -1); // 2
+print -(-x * -1); // -2
+x := 2147483647;
+print x + 4;
+
+var a : bool;
+a := (1 < 2);
+var y : bool;
+y := !a;
+print !a; // false
+print a; // true
+print y; // false
+a := y;
+print a; // false
+a := !y;
+print a; // true*/
+
+/*var x : string := "Trying \"to\" escape";
+print x;
+
+
+var nTimes : int := 0;
+print "How many times?";
+read nTimes;
+var b : int;
+for b in 0..nTimes-1 do
+  print b;
+  print " : Hello, World!\n";
+  var z : int;
+  for z in 0..1 do
+    print "Inside loop";
+  end for;
+end for;
+assert (b = nTimes);*/
+
+/*var nTimes : int := 0;
+print "How many times?";
+read nTimes;
+print
+"Epic
+Multiline
+String";
+print nTimes;
+// a := b + c;
+var x : int;
+// x := 2147483648;
+print x;
+x := -334;
+print x + (2 - -3);
+print x;
+// var x : string;
+for x in 0..6 do
+  print !(x = x);
+  var a : int;
+  print x;
+  print " : Hello, World!\n";
+end for;
+x := 2;
+assert (!((5 + (nTimes + x)) < 2));*/
+
+/*print "Give a number";
+var n : int;
+read n;
+var v : int := 1;
+var i : int;
+for i in 1..n do
+v := v * i;
+end for;
+print "The result is: ";
+print v; 
+
+var X : int := 4 + (6 * 2);
+print X;*/
+
+/*
+Declaration: Statement
+Assignment: Statement
+Print: Statement
+Read: Statement
+ForLoop: Statement
+Assert: Statement
+UnaryOperand: Operand
+ExpressionOperand: Operand
+UnaryExpression: Expression
+BinaryExpression: Expression
+
+Program: {
+  Statements: List<Statement>
+}
+Declaration: {
+  Identifier: <String>,
+  Type: SymbolType
+}
+Assignment: {
+  Identifier: <String>,
+  Value: Expression
+}
+Print: {
+  Expression: Expression
+}
+Read: {
+  Identifier: <String>,
+  Value: <input>
+}
+ForLoop: {
+  Assignment: Assignment,
+  Condition: BinaryExpression,
+  Statements: List<Statement>
+}
+Assert: {
+  Expression: Expression
+}
+BinaryExpression: {
+  Left: Operand,
+  Operator: SymbolType.Operator,
+  Right: Operand
+}
+UnaryExpression: {
+  Operand: Operand
+}
+UnaryOperand: {
+  Value: <String>,
+  Type: SymbolType 
+}
+ExpressionOperand: {
+  Expression: Expression
+}
+*/
+
+/*
+Program: {
+  Statements: [
+    Declaration: {
+      Identifier: nTimes,
+      Type: Integer
+    },
+    Assignment: {
+      Identifier: nTimes,
+      Value (Expression => UnaryExpression): {
+        Value (Operand => UnaryOperand): {
+          Value: 0,
+          Type: IntegerValue
+        } 
+      }
+    },
+    Print: {
+      Value (Expression => UnaryExpression): {
+        Value: (Operand => UnaryOperand): {
+          Value: "How many times?",
+          Type: StringValue
+        }
+      }
+    },
+    Read: {
+      Identifier: nTimes,
+      Value: <input> 
+    },
+    Declaration: {
+      Identifier: x,
+      Type: Integer
+    },
+    ForLoop: {
+      Assignment: {
+        Identifier: x,
+        Value (Expression => UnaryExpression): {
+          Value (Operand => UnaryOperand): {
+            Value: 0,
+            Type: IntegerValue
+          }
+        }
+      },
+      Condition: {
+        Left (Expression => UnaryExpression): {
+          Value (Operand => UnaryOperand): {
+            Value: x,
+            Type: Identifier
+          }
+        },
+        Operator: <=,
+        Right (Expression => BinaryExpression): {
+          Left (Operand => UnaryOperand): {
+            Value: nTimes,
+            Type: Identifier
+          },
+          Operator: -,
+          Right (Operand => ExpressionOperand): {
+            Expression (Expression => BinaryExpression): {
+              Left (Operand => UnaryOperand): {
+                Value: 3,
+                Type: IntegerValue
+              },
+              Operator: -,
+              Right (Operand => UnaryOperand): {
+                Value: 2,
+                Type: IntegerValue
+              }
+            }
+          }
+        }
+      },
+      Statements: [
+        Print: {
+          Value (Expression => UnaryExpression): {
+            Value: (Operand => UnaryOperand): {
+              Value: x,
+              Type: Identifier
+            }
+          }
+        },
+        Print: { // print (2 + 1); Is UnaryExpression
+          Value (Expression => UnaryExpression): {
+            Value: (Operand => UnaryOperand): {
+              Value: " : Hello, World!\n",
+              Type: StringValue
+            }
+          }
+        }
+      ]
+    },
+    Assert: {
+      Value (Expression => BinaryExpression): {
+        Left (Operand => UnaryOperand): {
+          Value: x,
+          Type: Identifier
+        },
+        Operator: =,
+        Right (Operand => UnaryOperand): {
+          Value: nTimes,
+          Type: Identifier
+        } 
+      }
+    }
+  ]
+}
+*/

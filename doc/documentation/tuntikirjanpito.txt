@@ -1,0 +1,35 @@
+03.02.2020 | 2 h | C# kääntäjän asennus tietokoneelle (Mac). Scannerin toimintaa aloiteltu.
+05.02.2020 | 2h | Scanneriin luotu toiminnallisuus tekstitiedoston jakamiseksi tokeneiksi.
+Tunnistaa regexien avulla nyt vain joitain tyyppejä, ei vielä esimerkiksi muuttujien nimiä.
+08.02.2020 | 2h | Lisää avainsanoja määritelty kieleen. Tokenizer tallentaa nyt myös tokenin 
+rivinumeron ja sijainnin rivillä.
+09.02.2020 | 8h | Luotu ohjelmointikielelle CFG ja CFG:tä vastaava PDA. Tokenizer tunnistaa nyt
+myös epävalidit merkit ja tulostaa rivit joilla on epävalideja merkkejä. Aloitettu 
+koodamaan PDA:ta luokkaan Parser.
+13.02.2020 | 4h | Aloiteltu Scannerin toteutusta DFA:na, päätin tehdä luentomateriaalia 
+noudattaen, vaikka aikaisempi Scanner olikin toimiva.
+14.02.2020 | 3h | DFA Scanneri toimii nyt. Virheraportteihin vielä oikeat rivinumerot.
+15.02.2020 | 3h | Scannerin toimintaa parannettu.
+16.02.2020 | 4h | Scanneri saatu kuntoon. Tallentaa nyt jokaiselle tokenille oikean 
+rivinumeron ja sarakenumeron. Ottaa huomioon myös kommenteissa ja tekstiliteraaleissa 
+olevat rivinvaihdot.
+17.02.2020 | 1h | Perhedytty Syntaksiseen analyysiin. Toteutettu Parser hyvin yksinkertaiselle 
+EBNF kielelle.
+17.02.2020 | 8h | Parser toteutettu alustavalle EBNF:lle. Scanneria jälleen paranneltu.
+Luotu projekti dotnetilla ja lisätty tiedosto testaamiselle.
+28.02.2020 | 2h | Virheiden käsittelyä toteutettu. Alustavasti pelkillä C#:n Exceptioneilla.
+29.02.2020 | 6h | Virheiden käsittelyä paranneltu. Tulostuksessa nyt myös alkuperäisen 
+tiedoston koodirivi. Hieman scriptiä toteutettu, jotta kääntäjän voi ajaa missä tahansa ja 
+mille tiedostolle tahansa.
+08.03.2020 | 3h | AST:n toteutusta aloitettu. Paljon pohdintaa, miltä AST näyttäisi.
+09.03.2020 | 2h | AST.
+10.03.2020 | 2h | AST.
+11.03.2020 | 2h | AST rakentuu nyt Parserin tarkistaessa kielen syntaksia.
+13.03.2020 | 5h | Symbolitaulu luotu ja aloiteltu koodin tulkkaamista.
+14.03.2020 | 3h | Lähdekoodi kääntyy nyt oikein, mutta tulkin koodi on kamalaa.
+16.03.2020 | 3h | Tyyppitarkastuksia ja koodin laatua paranneltu.
+17.03.2020 | 3h | Tyyppitarkastuksia jatkettu edelleen.
+18.03.2020 | 6h | Tyyppitarkastuksia ja parempia virheilmoituksia.
+19.03.2020 | 10h | Tyyppitarkastuksia ja koodin kääntämistä.
+20.03.2020 | 7h | Kieliopin hiomista ja tyyppitarkastuksia.
+21.03.2020 | 8h | Kielen hiontaa. Testauksen toteutusta. Refaktorointia.
